@@ -1,18 +1,20 @@
-# python3
+# Estella Saveljeva 221RDB176 7.grupa
 
 def read_input():
-    # this function needs to aquire input both from keyboard and file
-    # as before, use capital i (input from keyboard) and capital f (input from file) to choose which input type will follow
-    
-    
-    # after input type choice
-    # read two lines 
-    # first line is pattern 
-    # second line is text in which to look for pattern 
-    
-    # return both lines in one return
-    
-    # this is the sample return, notice the rstrip function
+     print("[!] \tUse an input to choose files or input - F or I ?")
+    textInput = input(":").upper()
+    if "F" in textInput:
+        print("[!] \tEnter file name or file path. For example '0'.")
+         with open("./tests/06", "r") as f:
+            text1 = f.readline()
+            text2 = f.readline()
+    elif "I" in textInput:
+        print("[!] \tEnter text below.")
+        text1 = input()
+        text2 = input()
+       
+    else:
+        print("[Err]:\tWrong input")
     return (input().rstrip(), input().rstrip())
 
 def print_occurrences(output):
