@@ -1,7 +1,7 @@
 # Estella Saveljeva 221RDB176 7.grupa
 
 def read_input():
-     text = input()
+    text = input()
 
     if "I" in text[:1]:
         text1 = input()
@@ -10,9 +10,10 @@ def read_input():
         with open("./tests/06", "r") as f:
             text1 = f.readline()
             text2 = f.readline()
-    return (input().rstrip(), input().rstrip())
+    return text1.rstrip(), text2.rstrip()
 
 def print_occurrences(output):
+    # this function should control output, it doesn't need any return
     print(' '.join(map(str, output)))
 
 def get_occurrences(pattern, text):
@@ -25,7 +26,5 @@ def get_occurrences(pattern, text):
                 result.append(i)
     return result
 
-
 if __name__ == '__main__':
     print_occurrences(get_occurrences(*read_input()))
-
