@@ -23,12 +23,12 @@ def print_occurrences(output):
 
 def get_occurrences(pattern, text):
     result = []
-hash_pattern = hash(pattern)
-for i in range(len(text) - len(pattern)   ):
-     hash_text = hash(text[i:i+len(pattern)])
-     if hash_text == hash_pattern:
-          if text[[i:i+len(pattern)] == pattern:]
-               result.append(i)
+    hash_pattern = hash(pattern)
+    for i in range(len(text) - len(pattern) +1 ):
+    hash_text = hash(text[i:i+len(pattern)])
+         if hash_text == hash_pattern:
+              if text[[i:i+len(pattern)] == pattern:]
+                   result.append(i)
     return result
 
 
