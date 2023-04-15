@@ -1,8 +1,8 @@
 # Estella Saveljeva 221RDB176 7.grupa
 
 def read_input():
-     print("[!] \tUse an input to choose files or input - F or I ?")
-    textInput = input(":").upper()
+    print("[!] \tUse an input to choose files or input - F or I ?")
+    textInput = input().upper()
     if "F" in textInput:
         print("[!] \tEnter file name or file path. For example '0'.")
          with open("./tests/06", "r") as f:
