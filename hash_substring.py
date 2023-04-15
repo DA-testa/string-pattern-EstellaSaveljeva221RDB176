@@ -27,7 +27,8 @@ hash_pattern = hash(pattern)
 for i in range(len(text) - len(pattern)   ):
      hash_text = hash(text[i:i+len(pattern)])
      if hash_text == hash_pattern:
-          result.append(i)
+          if text[[i:i+len(pattern)] == pattern:]
+               result.append(i)
     return result
 
 
