@@ -26,10 +26,11 @@ def get_occurrences(pattern, text):
 hash_pattern = hash(pattern)
 for i in range(len(text) - len(pattern)   ):
      hash_text = hash(text[i:i+len(pattern)])
-    return [0]
+     if hash_text == hash_pattern:
+          result.append(i)
+    return result
 
 
-# this part launches the functions
 if __name__ == '__main__':
     print_occurrences(get_occurrences(*read_input()))
 
