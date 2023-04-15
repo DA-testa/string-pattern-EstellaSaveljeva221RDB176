@@ -18,13 +18,10 @@ def read_input():
     return (input().rstrip(), input().rstrip())
 
 def print_occurrences(output):
-    # this function should control output, it doesn't need any return
     print(' '.join(map(str, output)))
 
 def get_occurrences(pattern, text):
-    # this function should find the occurances using Rabin Karp alghoritm 
-
-    # and return an iterable variable
+     
     return [0]
 
 
