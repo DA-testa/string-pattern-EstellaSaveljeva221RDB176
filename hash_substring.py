@@ -15,13 +15,17 @@ def read_input():
        
     else:
         print("[Err]:\tWrong input")
+          
     return (input().rstrip(), input().rstrip())
 
 def print_occurrences(output):
     print(' '.join(map(str, output)))
 
 def get_occurrences(pattern, text):
-     
+    result = []
+hash_pattern = hash(pattern)
+for i in range(len(text) - len(pattern)   ):
+     hash_text = hash(text[i:i+len(pattern)])
     return [0]
 
 
